@@ -52,6 +52,7 @@ img.onload = function(){
 
   stream.on('end', function () {
     console.log(`保存到 ${__dirname}/${savePath}`)
+    console.log(`耗时: ${new Date()-start}ms`)
   })
 }
 
