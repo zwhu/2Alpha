@@ -31,7 +31,6 @@ img.onload = function(){
 
   let imageData = ctx.getImageData(0, 0, width, height)
     , data = imageData.data
-    , newData = [], len = data.length/4
 
   for(let i = 0; i < data.length; i+=4) {
     let r = data[i]
